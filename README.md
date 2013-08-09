@@ -14,6 +14,7 @@ Installation:
 ```
 cd $IP/extensions
 git clone https://github.com/Wikinaut/MediaWiki-extension-OnlyRecentRecentChanges.git OnlyRecentRecentChanges
+```
 
 add the following line to your LocalSettings.php:
 

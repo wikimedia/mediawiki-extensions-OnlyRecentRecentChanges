@@ -17,7 +17,7 @@
  * git clone https://github.com/Wikinaut/MediaWiki-extension-OnlyRecentRecentChanges.git OnlyRecentRecentChanges
  *
  * add the following to LocalSettings.php:
- * require_once( "extensions/OnlyRecentRecentChanges/OnlyRecentRecentChanges.php" );
+ * require_once( "$IP/extensions/OnlyRecentRecentChanges/OnlyRecentRecentChanges.php" );
  *
  *
  * @file

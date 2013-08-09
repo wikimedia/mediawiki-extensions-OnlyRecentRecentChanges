@@ -1,12 +1,36 @@
 <?php
-#
-# OnlyRecentRecentChanges extension for MediaWiki
-# http://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges
-#
-# Installation:
-# create a file $IP/extensions/OnlyRecentRecentChanges.php with this code
-# add the following to LocalSettings.php:
-# require_once( "extensions/OnlyRecentRecentChanges.php" );
+/***
+ *
+ * OnlyRecentRecentChanges extension for MediaWiki
+ *
+ * The behaviour of the recent changes view is changed
+ * so that any changed article is only listed once,
+ * older changes are not listed any longer.
+ *
+ * Manual and homepage:
+ *
+ * http://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges
+ *
+ * Installation:
+ *
+ * cd $IP/extensions
+ * git clone https://github.com/Wikinaut/MediaWiki-extension-OnlyRecentRecentChanges.git OnlyRecentRecentChanges
+ *
+ * add the following to LocalSettings.php:
+ * require_once( "extensions/OnlyRecentRecentChanges/OnlyRecentRecentChanges.php" );
+ *
+ *
+ * @file
+ * @ingroup Extensions
+ * @author Thomas Gries
+ * @license GPL v2
+ * @license MIT
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ **/
 
 if( !defined( 'MEDIAWIKI' ) ) {
 	die( "This is not a valid entry point.\n" );

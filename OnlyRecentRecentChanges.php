@@ -4,12 +4,12 @@
  * OnlyRecentRecentChanges extension for MediaWiki
  *
  * The behaviour of the recent changes view is changed
- * so that any changed article is only listed once,
- * older changes are not listed any longer.
+ * so that any changed article is only listed once.
+ * Older changes are not listed any longer.
  *
  * Manual and homepage:
  *
- * http://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges
+ * https://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges
  *
  * Installation:
  *
@@ -18,7 +18,6 @@
  *
  * add the following to LocalSettings.php:
  * require_once( "$IP/extensions/OnlyRecentRecentChanges/OnlyRecentRecentChanges.php" );
- *
  *
  * @file
  * @ingroup Extensions
@@ -41,7 +40,7 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'OnlyRecentRecentChanges',
 	'descriptionmsg' => 'onlyrecentrecentchanges-desc',
-	'version' => '1.2.0',
+	'version' => '1.3.1',
 	'author' => 'Thomas Gries',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges',
 );
@@ -51,14 +50,31 @@ $wgExtensionMessagesFiles['onlyrecentrecentchanges'] = $dir . '/OnlyRecentRecent
 $wgHooks['GetPreferences'][] = 'onGetPreferences';
 $wgHooks['SpecialRecentChangesQuery'][] = 'onSpecialRecentChangesQuery';
 
+# New option and its default value
+$wgDefaultUserOptions['onlyrecentrecentchanges-show-only-recent-change'] = true;
 
 // see http://www.mediawiki.org/wiki/Manual:Hooks/SpecialRecentChangesQuery
 function onSpecialRecentChangesQuery( &$conds, &$tables, &$join_conds, $opts, &$query_options, &$select  ) {
 	global $wgUser;
 
-	if ( $wgUser->getOption( 'onlyrecentrecentchanges-tog' ) ) {
+	if ( $wgUser->getOption( 'onlyrecentrecentchanges-show-only-recent-change' ) ) {
+		$dbr = wfGetDB( DB_SLAVE );
+
 		if ( !in_array( 'page', $tables) ) array_unshift( $tables, 'page' );
-		$conds[] = 'page_latest=rc_this_oldid';
+
+		$conds[] = $dbr->makeList(
+			array(
+				'page_latest = rc_this_oldid',
+				'rc_log_action != "" '
+			),
+			LIST_OR
+		);
+
+		$join_conds['page'] = array(
+			'LEFT JOIN',
+			'page_latest = rc_this_oldid'
+		);
+
 	}
 	return true;
 }
@@ -69,7 +85,7 @@ function onSpecialRecentChangesQuery( &$conds, &$tables, &$join_conds, $opts, &$
  * @return bool
  */
 function onGetPreferences( $user, &$preferences ) {
-	$preferences['onlyrecentrecentchanges-tog'] = array(
+	$preferences['onlyrecentrecentchanges-show-only-recent-change'] = array(
 		'section' => 'rc/advancedrc',
 		'type' => 'toggle',
 		'label-message' => 'onlyrecentrecentchanges-option'

@@ -16,7 +16,9 @@ $messages['en'] = array(
 	'onlyrecentrecentchanges-option' => 'Show only the most recent change of any changed page (in the limits of {{int:prefs-displayrc}} as shown above)'
 );
 
-/** Message documentation (Message documentation)
+/** Message documentation
  */
 $messages['qqq'] = array(
+	'onlyrecentrecentchanges-desc' => '{{desc|name=OnlyRecentRecentChanges|url=https://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges}}',
+	'onlyrecentrecentchanges-option' => 'Label (description) text for the user option in the user preferences tab "Recent changes"'
 );

@@ -40,13 +40,13 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'OnlyRecentRecentChanges',
 	'descriptionmsg' => 'onlyrecentrecentchanges-desc',
-	'version' => '1.3.1',
+	'version' => '1.3.2',
 	'author' => 'Thomas Gries',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges',
 );
 
 $dir = dirname( __FILE__ );
-$wgExtensionMessagesFiles['onlyrecentrecentchanges'] = $dir . '/OnlyRecentRecentChanges.i18n.php';
+$wgExtensionMessagesFiles['OnlyRecentRecentChanges'] = $dir . '/OnlyRecentRecentChanges.i18n.php';
 $wgHooks['GetPreferences'][] = 'onGetPreferences';
 $wgHooks['SpecialRecentChangesQuery'][] = 'onSpecialRecentChangesQuery';
 

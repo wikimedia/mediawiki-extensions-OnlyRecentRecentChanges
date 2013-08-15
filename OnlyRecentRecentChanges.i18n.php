@@ -13,7 +13,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	'onlyrecentrecentchanges-desc' => 'Show pages in the list of recent changes only once when they were recently changed',
-	'onlyrecentrecentchanges-option' => 'Show only the most recent change of any changed page (in the limits of {{int:prefs-displayrc}} as shown above)'
+	'onlyrecentrecentchanges-option' => "Show only the most recent change of any changed page (in the limits of ''{{int:prefs-displayrc}}'' as shown above)"
 );
 
 /** Message documentation

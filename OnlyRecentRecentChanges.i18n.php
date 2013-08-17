@@ -49,6 +49,14 @@ $messages['ja'] = array(
 	'onlyrecentrecentchanges-option' => "最近の更新のページで、最新の変更のみを表示する (上記の ''{{int:prefs-displayrc}}'' の制限に従う)",
 );
 
+/** Macedonian (македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'onlyrecentrecentchanges-desc' => 'Прикажува страници во списокот на скорешни измени само ако се неодамна направени',
+	'onlyrecentrecentchanges-option' => "Прикажи само најнови промени на изменетите страници (во границите на ''{{int:prefs-displayrc}}'' како што е прикажано погоре)",
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */

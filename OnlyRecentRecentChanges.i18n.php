@@ -49,6 +49,14 @@ $messages['ja'] = array(
 	'onlyrecentrecentchanges-option' => "最近の更新のページで、最新の変更のみを表示する (上記の ''{{int:prefs-displayrc}}'' の制限に従う)",
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'onlyrecentrecentchanges-desc' => 'Säiten an der Lëscht vun de rezenten Ännerungen nëmmen eemol weisen wann se rezent geännert goufen',
+	'onlyrecentrecentchanges-option' => "Nëmmen déi rezentst Ännerung vun all geännerter Säit weisen (an de Limite vu(n) ''{{int:prefs-displayrc}}'' esou wéi hei driwwer gewisen)",
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */

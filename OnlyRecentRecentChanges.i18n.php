@@ -25,6 +25,13 @@ $messages['qqq'] = array(
 	'onlyrecentrecentchanges-option' => 'Label (description) text for the user option in the user preferences tab "Recent changes"',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'onlyrecentrecentchanges-option' => "Dangos y newid diweddaraf yn unig i unrhyw dudalen ar y rhestr ''{{int:prefs-displayrc}}''",
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
@@ -63,6 +70,14 @@ $messages['lb'] = array(
 $messages['mk'] = array(
 	'onlyrecentrecentchanges-desc' => 'Прикажува страници во списокот на скорешни измени само ако се неодамна направени',
 	'onlyrecentrecentchanges-option' => "Прикажи само најнови промени на изменетите страници (во границите на ''{{int:prefs-displayrc}}'' како што е прикажано погоре)",
+);
+
+/** Portuguese (português)
+ * @author Fúlvio
+ */
+$messages['pt'] = array(
+	'onlyrecentrecentchanges-desc' => 'Mostra páginas na lista de mudanças recentes apenas uma vez, quando elas foram recentemente alteradas.',
+	'onlyrecentrecentchanges-option' => "Mostrar somente a mudança mais recente de qualquer página alterada (dentro dos limites de ''{{int:prefs-displayrc}}'', como mostrado acima)",
 );
 
 /** tarandíne (tarandíne)

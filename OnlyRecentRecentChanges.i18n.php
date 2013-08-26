@@ -48,6 +48,14 @@ $messages['fr'] = array(
 	'onlyrecentrecentchanges-option' => "Afficher uniquement la modification la plus récente sur chaque page modifiée (dans les limites de ''{{int:prefs-displayrc}}'' comme affiché ci-dessus)",
 );
 
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'onlyrecentrecentchanges-desc' => 'Mostra as páxinas na lista de cambios recentes só unha vez cando foron modificadas recentemente',
+	'onlyrecentrecentchanges-option' => "Mostrar só o cambio máis recente das páxinas modificadas (dentro dos límites de ''{{int:prefs-displayrc}}'', como se mostra enriba)",
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
@@ -70,6 +78,14 @@ $messages['lb'] = array(
 $messages['mk'] = array(
 	'onlyrecentrecentchanges-desc' => 'Прикажува страници во списокот на скорешни измени само ако се неодамна направени',
 	'onlyrecentrecentchanges-option' => "Прикажи само најнови промени на изменетите страници (во границите на ''{{int:prefs-displayrc}}'' како што е прикажано погоре)",
+);
+
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'onlyrecentrecentchanges-desc' => 'Afichar un sol còp las paginas dins la lista dels darrièrs cambiaments, quand son estadas modificadas recentament',
+	'onlyrecentrecentchanges-option' => "Afichar sonque la modificacion la mai recenta sus cada pagina modificada (dins los limits de ''{{int:prefs-displayrc}}'' coma afichat çaissús)",
 );
 
 /** Portuguese (português)

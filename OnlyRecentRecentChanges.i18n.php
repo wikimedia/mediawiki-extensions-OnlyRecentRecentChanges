@@ -25,6 +25,14 @@ $messages['qqq'] = array(
 	'onlyrecentrecentchanges-option' => 'Label (description) text for the user option in the user preferences tab "Recent changes"',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'onlyrecentrecentchanges-desc' => 'Ver les páxines de la llista de cambios recientes sólo una vez cuando camudaron de recién',
+	'onlyrecentrecentchanges-option' => "Ver sólo el cambiu más reciente de cualquier páxina cambiada (dientro de les llendes de ''{{int:prefs-displayrc}}'', como s'amuesa arriba)",
+);
+
 /** Welsh (Cymraeg)
  * @author Lloffiwr
  */

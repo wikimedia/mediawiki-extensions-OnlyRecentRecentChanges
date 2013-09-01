@@ -48,6 +48,14 @@ $messages['de'] = array(
 	'onlyrecentrecentchanges-option' => "Zeige nur die aktuellste Version jeder geänderten Seite (in den Beschränkungen von ''{{int:prefs-displayrc}}'', wie oben angezeigt)",
 );
 
+/** Spanish (español)
+ * @author Fitoschido
+ */
+$messages['es'] = array(
+	'onlyrecentrecentchanges-desc' => 'Mostrar la páginas en la lista de cambios recientes solo una vez cuando éstas se han modificado recientemente',
+	'onlyrecentrecentchanges-option' => "Solo mostrar el cambio más reciente de cualquier página modificada (dentro de los límites de ''{{int:prefs-displayrc}}'' como se muestra arriba)",
+);
+
 /** French (français)
  * @author Gomoko
  */

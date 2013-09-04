@@ -104,6 +104,13 @@ $messages['oc'] = array(
 	'onlyrecentrecentchanges-option' => "Afichar sonque la modificacion la mai recenta sus cada pagina modificada (dins los limits de ''{{int:prefs-displayrc}}'' coma afichat çaissús)",
 );
 
+/** Polish (polski)
+ * @author Chrumps
+ */
+$messages['pl'] = array(
+	'onlyrecentrecentchanges-desc' => 'Pokazuj strony na liście ostatnich zmian tylko wtedy, gdy zostały ostatnio zmienione',
+);
+
 /** Portuguese (português)
  * @author Fúlvio
  */

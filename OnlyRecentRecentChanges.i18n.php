@@ -106,9 +106,10 @@ $messages['oc'] = array(
 
 /** Polish (polski)
  * @author Chrumps
+ * @author Woytecr
  */
 $messages['pl'] = array(
-	'onlyrecentrecentchanges-desc' => 'Pokazuj strony na liście ostatnich zmian tylko wtedy, gdy zostały ostatnio zmienione',
+	'onlyrecentrecentchanges-desc' => 'Pokazuj strony na liście ostatnich zmian tylko raz, gdy zostały ostatnio zmienione',
 );
 
 /** Portuguese (português)

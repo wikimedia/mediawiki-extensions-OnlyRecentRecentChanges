@@ -37,6 +37,7 @@ $messages['ast'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
+	'onlyrecentrecentchanges-desc' => 'Dangos tudalennau a newidwyd yn ddiweddar unwaith yn unig yn rhestr y newidiadau diweddar',
 	'onlyrecentrecentchanges-option' => "Dangos y newid diweddaraf yn unig i unrhyw dudalen ar y rhestr ''{{int:prefs-displayrc}}''",
 );
 

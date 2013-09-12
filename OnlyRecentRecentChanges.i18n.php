@@ -22,7 +22,9 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'onlyrecentrecentchanges-desc' => '{{desc|name=Only Recent Recent Changes|url=https://www.mediawiki.org/wiki/Extension:OnlyRecentRecentChanges}}
 "recent changes" refers the special page [[Special:RecentChanges]].',
-	'onlyrecentrecentchanges-option' => 'Label (description) text for the user option in the user preferences tab "Recent changes"',
+	'onlyrecentrecentchanges-option' => 'Label (description) text for the user option in the user preferences tab "Recent changes".
+
+Refers to {{msg-mw|Prefs-displayrc}}.',
 );
 
 /** Asturian (asturianu)

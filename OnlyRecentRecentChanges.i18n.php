@@ -131,6 +131,14 @@ $messages['roa-tara'] = array(
 	'onlyrecentrecentchanges-option' => "Fà vedè sulamende le urteme urteme cangiaminde de ogne pàgene cangiate (jndr'à le limite de ''{{int:prefs-displayrc}}'' cumme viste sus)",
 );
 
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'onlyrecentrecentchanges-desc' => 'Показывает страницы в списке недавних изменений только один раз, когда они были недавно изменены',
+	'onlyrecentrecentchanges-option' => "Показать только самое последнее изменение любой измененной страницы (в пределах ''{{int:prefs-displayrc}}'', как указано выше)",
+);
+
 /** Ukrainian (українська)
  * @author Andriykopanytsia
  */

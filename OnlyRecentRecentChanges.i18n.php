@@ -85,10 +85,11 @@ $messages['ja'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'onlyrecentrecentchanges-desc' => 'Säiten an der Lëscht vun de rezenten Ännerungen nëmmen eemol weisen wann se rezent geännert goufen',
-	'onlyrecentrecentchanges-option' => "Nëmmen déi rezentst Ännerung vun all geännerter Säit weisen (an de Limite vu(n) ''{{int:prefs-displayrc}}'' esou wéi hei driwwer gewisen)",
+	'onlyrecentrecentchanges-option' => "Nëmmen déi rezentst Ännerung vun all geännerter Säit weisen (an de Limite vu(n) ''{{int:prefs-displayrc}}'' sou wéi hei driwwer gewisen)",
 );
 
 /** Macedonian (македонски)

@@ -100,6 +100,14 @@ $messages['mk'] = array(
 	'onlyrecentrecentchanges-option' => "Прикажи само најнови промени на изменетите страници (во границите на ''{{int:prefs-displayrc}}'' како што е прикажано погоре)",
 );
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'onlyrecentrecentchanges-desc' => "Pagina's maximaal één keer weergeven in de lijst met recente wijzigingen als ze vaker voorkomen",
+	'onlyrecentrecentchanges-option' => 'Aleen de meest recente wijziging van pagina\'s weergeven (binnen de beperkingen van "{{int:prefs-displayrc}}" als hierboven aangegeven)',
+);
+
 /** Occitan (occitan)
  * @author Cedric31
  */

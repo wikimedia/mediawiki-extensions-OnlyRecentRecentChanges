@@ -155,3 +155,11 @@ $messages['uk'] = array(
 	'onlyrecentrecentchanges-desc' => 'Показувати сторінки в списку останніх змін тільки, коли вони були недавно змінені',
 	'onlyrecentrecentchanges-option' => "Показати тільки останні зміни будь-якої зміненої сторінки (в межах ''{{int:prefs-displayrc}}'' як показано вище)",
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'onlyrecentrecentchanges-desc' => '在最近更改列表中只显示一次它们最近的更改',
+	'onlyrecentrecentchanges-option' => "对任何变更的页面只显示最近的变化（在''{{int:prefs-displayrc}}''定义显示限额）",
+);

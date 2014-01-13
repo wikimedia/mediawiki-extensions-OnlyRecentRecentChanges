@@ -59,6 +59,13 @@ $messages['es'] = array(
 	'onlyrecentrecentchanges-option' => "Solo mostrar el cambio más reciente de cualquier página modificada (dentro de los límites de ''{{int:prefs-displayrc}}'' como se muestra arriba)",
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'onlyrecentrecentchanges-desc' => 'فقط یک بار نمایش صفحات در فهرست تغییرات اخیر هنگامی که آنها اخیراً تغییر داده شدند',
+);
+
 /** French (français)
  * @author Gomoko
  */

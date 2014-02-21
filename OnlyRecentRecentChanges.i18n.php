@@ -64,6 +64,7 @@ $messages['es'] = array(
  */
 $messages['fa'] = array(
 	'onlyrecentrecentchanges-desc' => 'فقط یک بار نمایش صفحات در فهرست تغییرات اخیر هنگامی که آنها اخیراً تغییر داده شدند',
+	'onlyrecentrecentchanges-option' => "فقط نشان دادن جدیدترین تغییر هر صفحهٔ تغییر داده‌ شده (در محدودهٔ ''{{int:prefs-displayrc}}'' که بالا نشان داده‌ شده)",
 );
 
 /** French (français)

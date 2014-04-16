@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Fúlvio"
-        ]
-    },
-    "onlyrecentrecentchanges-desc": "Mostra páginas na lista de mudanças recentes apenas uma vez, quando elas foram recentemente alteradas.",
-    "onlyrecentrecentchanges-option": "Mostrar somente a mudança mais recente de qualquer página alterada (dentro dos limites de ''{{int:prefs-displayrc}}'', como mostrado acima)"
+	"@metadata": {
+		"authors": [
+			"Fúlvio"
+		]
+	},
+	"onlyrecentrecentchanges-desc": "Mostra páginas na lista de mudanças recentes apenas uma vez, quando elas foram recentemente alteradas.",
+	"onlyrecentrecentchanges-option": "Mostrar somente a mudança mais recente de qualquer página alterada (dentro dos limites de ''{{int:prefs-displayrc}}'', como mostrado acima)"
 }

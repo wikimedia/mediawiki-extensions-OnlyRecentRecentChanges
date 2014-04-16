@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Toliño"
-        ]
-    },
-    "onlyrecentrecentchanges-desc": "Mostra as páxinas na lista de cambios recentes só unha vez cando foron modificadas recentemente",
-    "onlyrecentrecentchanges-option": "Mostrar só o cambio máis recente das páxinas modificadas (dentro dos límites de ''{{int:prefs-displayrc}}'', como se mostra enriba)"
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"onlyrecentrecentchanges-desc": "Mostra as páxinas na lista de cambios recentes só unha vez cando foron modificadas recentemente",
+	"onlyrecentrecentchanges-option": "Mostrar só o cambio máis recente das páxinas modificadas (dentro dos límites de ''{{int:prefs-displayrc}}'', como se mostra enriba)"
 }

@@ -47,7 +47,6 @@ $wgExtensionCredits['other'][] = array(
 
 $dir = dirname( __FILE__ );
 $wgMessagesDirs['OnlyRecentRecentChanges'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['OnlyRecentRecentChanges'] = $dir . '/OnlyRecentRecentChanges.i18n.php';
 $wgHooks['GetPreferences'][] = 'onGetPreferences';
 $wgHooks['SpecialRecentChangesQuery'][] = 'onSpecialRecentChangesQuery';
 

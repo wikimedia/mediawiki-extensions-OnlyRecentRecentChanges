@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"Mar(c)"
 		]
 	},
 	"onlyrecentrecentchanges-desc": "Pagina's maximaal één keer weergeven in de lijst met recente wijzigingen als ze vaker voorkomen",
-	"onlyrecentrecentchanges-option": "Aleen de meest recente wijziging van pagina's weergeven (binnen de beperkingen van \"{{int:prefs-displayrc}}\" als hierboven aangegeven)"
+	"onlyrecentrecentchanges-option": "Alleen de meest recente wijziging van een gewijzigde pagina weergeven (binnen de beperkingen van \"{{int:prefs-displayrc}}\" zoals hierboven aangegeven)"
 }

@@ -48,13 +48,13 @@ $wgExtensionCredits['other'][] = array(
 $dir = dirname( __FILE__ );
 $wgMessagesDirs['OnlyRecentRecentChanges'] = __DIR__ . '/i18n';
 $wgHooks['GetPreferences'][] = 'onGetPreferences';
-$wgHooks['SpecialRecentChangesQuery'][] = 'onSpecialRecentChangesQuery';
+$wgHooks['ChangesListSpecialPageQuery'][] = 'onChangesListSpecialPageQuery';
 
 # New option and its default value
 $wgDefaultUserOptions['onlyrecentrecentchanges-show-only-recent-change'] = true;
 
-// see http://www.mediawiki.org/wiki/Manual:Hooks/SpecialRecentChangesQuery
-function onSpecialRecentChangesQuery( &$conds, &$tables, &$join_conds, $opts, &$query_options, &$select  ) {
+// see https://www.mediawiki.org/wiki/Manual:Hooks/ChangesListSpecialPageQuery
+function onChangesListSpecialPageQuery( $name, &$tables, &$fields, &$conds, &$query_options, &$join_conds, $opts  ) {
 	global $wgUser;
 
 	if ( $wgUser->getOption( 'onlyrecentrecentchanges-show-only-recent-change' ) ) {

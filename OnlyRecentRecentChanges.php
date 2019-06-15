@@ -58,7 +58,7 @@ function onChangesListSpecialPageQuery( $name, &$tables, &$fields, &$conds, &$qu
 	global $wgUser;
 
 	if ( $wgUser->getOption( 'onlyrecentrecentchanges-show-only-recent-change' ) ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		if ( !in_array( 'page', $tables) ) array_unshift( $tables, 'page' );
 

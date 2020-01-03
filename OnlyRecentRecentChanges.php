@@ -55,9 +55,8 @@ $wgDefaultUserOptions['onlyrecentrecentchanges-show-only-recent-change'] = true;
 
 // see https://www.mediawiki.org/wiki/Manual:Hooks/ChangesListSpecialPageQuery
 function onChangesListSpecialPageQuery( $name, &$tables, &$fields, &$conds, &$query_options, &$join_conds, $opts  ) {
-	global $wgUser;
-
-	if ( $wgUser->getOption( 'onlyrecentrecentchanges-show-only-recent-change' ) ) {
+	if ( RequestContext::getMain()->getUser()
+		->getOption( 'onlyrecentrecentchanges-show-only-recent-change' ) ) {
 		$dbr = wfGetDB( DB_REPLICA );
 
 		if ( !in_array( 'page', $tables) ) array_unshift( $tables, 'page' );

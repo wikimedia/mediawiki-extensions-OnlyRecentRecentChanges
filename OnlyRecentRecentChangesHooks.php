@@ -32,7 +32,7 @@ class OnlyRecentRecentChangesHooks {
 			$conds[] = $dbr->makeList(
 				[
 					'page_latest = rc_this_oldid',
-					'rc_log_action != ""'
+					'rc_log_action != ' . $dbr->addQuotes( '' )
 				],
 				LIST_OR
 			);

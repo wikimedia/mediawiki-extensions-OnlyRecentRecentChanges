@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class OnlyRecentRecentChangesHooks {
 
 	/**
@@ -21,8 +23,10 @@ class OnlyRecentRecentChangesHooks {
 		&$join_conds,
 		$opts
 	) {
-		if ( RequestContext::getMain()->getUser()
-			->getOption( 'onlyrecentrecentchanges-show-only-recent-change' ) ) {
+		if ( MediaWikiServices::getInstance()->getUserOptionsManager()->getOption(
+			RequestContext::getMain()->getUser(),
+			'onlyrecentrecentchanges-show-only-recent-change' )
+		) {
 			$dbr = wfGetDB( DB_REPLICA );
 
 			if ( !in_array( 'page', $tables ) ) {

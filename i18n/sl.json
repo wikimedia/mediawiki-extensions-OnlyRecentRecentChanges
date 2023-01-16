@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"onlyrecentrecentchanges-desc": "Prikaže strani na seznamu zadnjih sprememb samo takrat, ko so bile pred kratkim spremenjene",
+	"onlyrecentrecentchanges-option": "Prikaži samo zadnjo spremembo katere koli spremenjene strani (v mejah ''{{int:prefs-displayrc}}'', kot je prikazano zgoraj)"
+}

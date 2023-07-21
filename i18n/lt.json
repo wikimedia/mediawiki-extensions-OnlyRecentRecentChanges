@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"onlyrecentrecentchanges-desc": "Rodyti puslapius naujausių pakeitimų sąraše tik vieną kartą, kai jie buvo neseniai pakeisti",
+	"onlyrecentrecentchanges-option": "Rodyti tik naujausią bet kurio pakeisto puslapio pakeitimą (neviršijant ''{{int:prefs-displayrc}}'' ribų, kaip parodyta aukščiau)"
+}

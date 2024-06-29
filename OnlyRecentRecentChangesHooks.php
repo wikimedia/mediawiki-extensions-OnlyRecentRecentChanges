@@ -3,20 +3,20 @@
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\SpecialPage\Hook\ChangesListSpecialPageQueryHook;
 use MediaWiki\User\UserOptionsManager;
-use Wikimedia\Rdbms\ILoadBalancer;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 class OnlyRecentRecentChangesHooks implements
 	ChangesListSpecialPageQueryHook,
 	GetPreferencesHook
 {
-	private ILoadBalancer $loadBalancer;
+	private IConnectionProvider $dbProvider;
 	private UserOptionsManager $userOptionsManager;
 
 	public function __construct(
-		ILoadBalancer $loadBalancer,
+		IConnectionProvider $dbProvider,
 		UserOptionsManager $userOptionsManager
 	) {
-		$this->loadBalancer = $loadBalancer;
+		$this->dbProvider = $dbProvider;
 		$this->userOptionsManager = $userOptionsManager;
 	}
 
@@ -43,7 +43,7 @@ class OnlyRecentRecentChangesHooks implements
 			RequestContext::getMain()->getUser(),
 			'onlyrecentrecentchanges-show-only-recent-change' )
 		) {
-			$dbr = $this->loadBalancer->getConnection( DB_REPLICA );
+			$dbr = $this->dbProvider->getReplicaDatabase();
 
 			if ( !in_array( 'page', $tables ) ) {
 				array_unshift( $tables, 'page' );

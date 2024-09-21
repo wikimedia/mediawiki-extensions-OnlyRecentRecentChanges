@@ -27,7 +27,7 @@ class OnlyRecentRecentChangesHooks {
 			RequestContext::getMain()->getUser(),
 			'onlyrecentrecentchanges-show-only-recent-change' )
 		) {
-			$dbr = wfGetDB( DB_REPLICA );
+			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 			if ( !in_array( 'page', $tables ) ) {
 				array_unshift( $tables, 'page' );

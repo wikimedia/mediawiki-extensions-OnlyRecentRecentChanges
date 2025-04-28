@@ -1,13 +1,24 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\SpecialPage\Hook\ChangesListSpecialPageQueryHook;
+use MediaWiki\User\UserOptionsManager;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 class OnlyRecentRecentChangesHooks implements
 	ChangesListSpecialPageQueryHook,
 	GetPreferencesHook
 {
+	private ILoadBalancer $loadBalancer;
+	private UserOptionsManager $userOptionsManager;
+
+	public function __construct(
+		ILoadBalancer $loadBalancer,
+		UserOptionsManager $userOptionsManager
+	) {
+		$this->loadBalancer = $loadBalancer;
+		$this->userOptionsManager = $userOptionsManager;
+	}
 
 	/**
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ChangesListSpecialPageQuery
@@ -28,11 +39,11 @@ class OnlyRecentRecentChangesHooks implements
 		&$join_conds,
 		$opts
 	) {
-		if ( MediaWikiServices::getInstance()->getUserOptionsManager()->getOption(
+		if ( $this->userOptionsManager->getOption(
 			RequestContext::getMain()->getUser(),
 			'onlyrecentrecentchanges-show-only-recent-change' )
 		) {
-			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+			$dbr = $this->loadBalancer->getConnection( DB_REPLICA );
 
 			if ( !in_array( 'page', $tables ) ) {
 				array_unshift( $tables, 'page' );

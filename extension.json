@@ -21,7 +21,11 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "OnlyRecentRecentChangesHooks"
+			"class": "OnlyRecentRecentChangesHooks",
+			"services": [
+				"DBLoadBalancer",
+				"UserOptionsManager"
+			]
 		}
 	},
 	"Hooks": {

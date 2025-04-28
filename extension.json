@@ -6,7 +6,7 @@
 	"descriptionmsg": "onlyrecentrecentchanges-desc",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.42.0"
 	},
 	"DefaultUserOptions": {
 		"onlyrecentrecentchanges-show-only-recent-change": true
@@ -23,7 +23,7 @@
 		"main": {
 			"class": "OnlyRecentRecentChangesHooks",
 			"services": [
-				"DBLoadBalancer",
+				"ConnectionProvider",
 				"UserOptionsManager"
 			]
 		}

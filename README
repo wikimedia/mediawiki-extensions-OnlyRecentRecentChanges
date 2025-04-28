@@ -12,7 +12,7 @@ Installation
 ============
 
 cd $IP/extensions
-git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/OnlyRecentRecentChanges
+git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/OnlyRecentRecentChanges
 
 add the following line to your LocalSettings.php:
-require_once( "$IP/extensions/OnlyRecentRecentChanges/OnlyRecentRecentChanges.php" );
+wfLoadExtension( 'OnlyRecentRecentChanges' );

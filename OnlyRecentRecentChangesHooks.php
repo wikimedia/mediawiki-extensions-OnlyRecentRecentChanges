@@ -1,8 +1,13 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Preferences\Hook\GetPreferencesHook;
+use MediaWiki\SpecialPage\Hook\ChangesListSpecialPageQueryHook;
 
-class OnlyRecentRecentChangesHooks {
+class OnlyRecentRecentChangesHooks implements
+	ChangesListSpecialPageQueryHook,
+	GetPreferencesHook
+{
 
 	/**
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ChangesListSpecialPageQuery
@@ -14,7 +19,7 @@ class OnlyRecentRecentChangesHooks {
 	 * @param array &$join_conds join conditions for the tables
 	 * @param \FormOptions $opts FormOptions for this request
 	 */
-	public static function onChangesListSpecialPageQuery(
+	public function onChangesListSpecialPageQuery(
 		$name,
 		&$tables,
 		&$fields,
@@ -52,7 +57,7 @@ class OnlyRecentRecentChangesHooks {
 	 * @param User $user
 	 * @param array[] &$preferences
 	 */
-	public static function onGetPreferences( $user, &$preferences ) {
+	public function onGetPreferences( $user, &$preferences ) {
 		$preferences['onlyrecentrecentchanges-show-only-recent-change'] = [
 			'section' => 'rc/advancedrc',
 			'type' => 'toggle',

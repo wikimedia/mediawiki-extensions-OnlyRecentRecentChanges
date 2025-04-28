@@ -19,9 +19,14 @@
 	"AutoloadClasses": {
 		"OnlyRecentRecentChangesHooks": "OnlyRecentRecentChangesHooks.php"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "OnlyRecentRecentChangesHooks"
+		}
+	},
 	"Hooks": {
-		"GetPreferences": "OnlyRecentRecentChangesHooks::onGetPreferences",
-		"ChangesListSpecialPageQuery": "OnlyRecentRecentChangesHooks::onChangesListSpecialPageQuery"
+		"GetPreferences": "main",
+		"ChangesListSpecialPageQuery": "main"
 	},
 	"manifest_version": 2
 }

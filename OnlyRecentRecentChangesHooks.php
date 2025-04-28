@@ -1,8 +1,10 @@
 <?php
 
+use MediaWiki\Context\RequestContext;
+use MediaWiki\Html\FormOptions;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\SpecialPage\Hook\ChangesListSpecialPageQueryHook;
-use MediaWiki\User\UserOptionsManager;
+use MediaWiki\User\Options\UserOptionsManager;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 class OnlyRecentRecentChangesHooks implements
@@ -28,7 +30,7 @@ class OnlyRecentRecentChangesHooks implements
 	 * @param array &$conds array of WHERE conditionals for query
 	 * @param array &$query_options array of options for the database request
 	 * @param array &$join_conds join conditions for the tables
-	 * @param \FormOptions $opts FormOptions for this request
+	 * @param FormOptions $opts FormOptions for this request
 	 */
 	public function onChangesListSpecialPageQuery(
 		$name,

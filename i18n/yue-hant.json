@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"JeffreyKim"
+		]
+	},
+	"onlyrecentrecentchanges-desc": "喺最近變更清單入面顯示嘅頁面淨係會喺最近變更嗰陣顯示一次",
+	"onlyrecentrecentchanges-option": "淨係顯示任何更改咗嘅頁面嘅最近更改（如上所示嘅''{{int:prefs-displayrc}}''嘅限制）"
+}

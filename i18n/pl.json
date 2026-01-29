@@ -5,5 +5,6 @@
 			"Woytecr"
 		]
 	},
-	"onlyrecentrecentchanges-desc": "Pokazuj strony na liście ostatnich zmian tylko raz, gdy zostały ostatnio zmienione"
+	"onlyrecentrecentchanges-desc": "Pokazuj strony na liście ostatnich zmian tylko raz, gdy zostały ostatnio zmienione",
+	"onlyrecentrecentchanges-option": "Pokaż tylko ostatnią zmianę dla każdej zmienionej strony (w granicach ''{{int:prefs-displayrc}}'' jak pokazano powyżej)"
 }

@@ -5,6 +5,7 @@ use MediaWiki\Html\FormOptions;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\SpecialPage\Hook\ChangesListSpecialPageQueryHook;
 use MediaWiki\User\Options\UserOptionsManager;
+use MediaWiki\User\User;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 class OnlyRecentRecentChangesHooks implements

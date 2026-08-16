@@ -11,15 +11,10 @@ class OnlyRecentRecentChangesHooks implements
 	ChangesListSpecialPageQueryHook,
 	GetPreferencesHook
 {
-	private IConnectionProvider $dbProvider;
-	private UserOptionsManager $userOptionsManager;
-
 	public function __construct(
-		IConnectionProvider $dbProvider,
-		UserOptionsManager $userOptionsManager
+		private readonly IConnectionProvider $dbProvider,
+		private readonly UserOptionsManager $userOptionsManager,
 	) {
-		$this->dbProvider = $dbProvider;
-		$this->userOptionsManager = $userOptionsManager;
 	}
 
 	/**

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"onlyrecentrecentchanges-desc": "Zobrazuje stránky v zozname posledných úprav len raz, keď boli nedávno zmenené",
+	"onlyrecentrecentchanges-option": "Zobraziť len najnovšiu zmenu každej zmenenej stránky (v rámci ''{{int:prefs-displayrc}}'' uvedenom vyššie)"
+}
